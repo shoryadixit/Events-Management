@@ -36,7 +36,7 @@
         alert("Please enter a password.");
         return false;
       }
-      window.location.href = "./event.html";
+      window.location.href = "./home.html";
       return false;
     }
   </script>
@@ -118,12 +118,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand">Home</a>
-  </nav>
-
   <div class="container">
-    <form action="./event.html" onsubmit="return validateForm()">
+    <form action="./home.html" onsubmit="return validateForm()">
       <h1>Login</h1>
       <input type="text" name="email" id="email" placeholder="username" />
       <input type="password" name="pass" id="pass" placeholder="Password" />

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <script>
+        function onHomeClick() {
+            window.location.href = "./home.html";
+        }
+
+        function onEventClick() {
+            window.location.href = "./event.html";
+        }
+
+        function logout() {
+            window.location.href = "./index.html";
+        }
+    </script>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            background-color: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 20px;
+            backdrop-filter: blur(8px);
+            height: 98.5vh;
+        }
+
+        .home,
+        .events {
+            text-decoration: none;
+            margin: 70px;
+            font-size: 4.2rem;
+            font-weight: 400;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        button {
+            width: 10%;
+            height: 6%;
+            background: none;
+            outline: none;
+            border: none;
+            color: #fff;
+            opacity: 0.5;
+            font-size: 2.2rem;
+        }
+
+        button:hover {
+            background-color: lightslategrey;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .2s ease-out;
+        }
+    </style>
+</head>
+
+<body></body>
+    <div class="container">
+        <h1 onclick="onHomeClick()" class="home">Home</h1>
+        <h1 onclick="onEventClick()" class="events">Events</h1>
+        <button onclick="logout()">Log Out</button>
+    </div>
+</body>
+
+</html>

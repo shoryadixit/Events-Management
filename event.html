@@ -66,7 +66,7 @@
     });
 
     function logOut() {
-      window.location.href = "./index.html";
+      window.location.href = "./home.html";
     }
   </script>
 
@@ -105,13 +105,13 @@
 
     .eventDiv {
       overflow: auto;
-      display: flex;
+      display: grid;
       flex-direction: column;
       background-color: white;
       padding: 10px;
       border-radius: 5px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      margin: 20px;
+      margin: 5px;
       width: calc(50% - 120px);
       box-sizing: border-box;
       cursor: pointer;
@@ -205,7 +205,7 @@
   <div id="main-container">
     <h1>Events</h1>
     <div id="events-container"></div>
-    <button onclick="logOut()">Log Out</button>
+    <button onclick="logOut()">Back</button>
   </div>
 
 </body>
