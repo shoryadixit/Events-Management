@@ -75,13 +75,16 @@
       font-family: 'Courier New', Courier, monospace;
       display: flex;
       flex-direction: column;
+      background-image: url("./GLA_University_logo.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
       align-items: center;
       justify-content: space-evenly;
       background-color: #f2f2f2;
     }
 
     #main-container {
-      background: rgba(0, 0, 0, 0.2);
+      background: rgba(255, 255, 255, 0.6);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -181,27 +184,11 @@
       background-color: #0056b3;
     }
 
-    nav {
-      background-color: lightgray;
-      display: block;
-      width: 100%;
-      padding: 20px;
-      font-size: 26px;
-    }
-
-    a {
-      text-decoration: none;
-      color: black;
-      cursor: default;
-    }
   </style>
 </head>
 
 <body>
-  <nav>
-    <a>Events</a>
-  </nav>
-  
+
   <div id="main-container">
     <h1>Events</h1>
     <div id="events-container"></div>
