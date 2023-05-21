@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>login</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <script>
+    function validateForm() {
+      var username = document.getElementById("email").value;
+      var password = document.getElementById("pass").value;
+
+      // Perform validation
+      if (username === "") {
+        alert("Please enter a username.");
+        return false;
+      }
+
+      if (password === "") {
+        alert("Please enter a password.");
+        return false;
+      }
+      window.location.href = "./event.html";
+      return false;
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
+
+    form {
+      background: #eeeaea;
+      width: 500px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      font-size: 1rem;
+      padding: 20px;
+      box-shadow: 0px 0px 30px 20px rgba(255, 255, 255, 0.4);
+      border-radius: 20px;
+      border: 4px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+    }
+
+    #email {
+      width: 75%;
+      height: 46px;
+      font-size: 1.3rem;
+      outline: none;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 3px;
+    }
+
+    #pass {
+      width: 75%;
+      height: 46px;
+      font-size: 1.2rem;
+      font-size: 1.2rem;
+      outline: none;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 3px;
+    }
+
+    button {
+      width: 170px;
+      height: 50px;
+      border-radius: 15px;
+      border: none;
+      background: rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      color: #fff;
+      font-size: 1.2rem;
+      background-color: rgb(10, 83, 219);
+      transition: 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: green;
+      border: 0px solid rgb(9, 85, 9);
+    }
+
+    a {
+      cursor: default;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">Home</a>
+  </nav>
+
+  <div class="container">
+    <form action="./event.html" onsubmit="return validateForm()">
+      <h1>Login</h1>
+      <input type="text" name="email" id="email" placeholder="username" />
+      <input type="password" name="pass" id="pass" placeholder="Password" />
+      <button>Login</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
