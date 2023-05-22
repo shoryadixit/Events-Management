@@ -5,6 +5,7 @@ var events = [
         date: "2020-03-01",
         time: "10:00",
         location: "College Campus",
+        description: "This is a cultural event held in college campus."
     },
 
     {

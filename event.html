@@ -31,6 +31,9 @@
         var eventLocation = document.createElement("p");
         eventLocation.textContent = "Location: " + event.location;
 
+        var description = document.createElement("p");
+        description.textContent = "Description: " + event.description;
+
         var closeButton = document.createElement("button");
         closeButton.textContent = "Close";
         closeButton.addEventListener("click", function () {
@@ -42,6 +45,7 @@
         dialogBox.appendChild(eventDate);
         dialogBox.appendChild(eventTime);
         dialogBox.appendChild(eventLocation);
+        dialogBox.appendChild(description);
         dialogBox.appendChild(closeButton);
 
         document.body.appendChild(dialogBox);
